@@ -4,8 +4,26 @@
    
 	<a class="editor-link btn" href="cloudcannon:collections/_data/navigation.yml" class="btn"><strong>&#9998;</strong> Edit navigation</a>
 	
-	 <div align="left"><img src="/images/logo.jpg"></div>
 	 
+	 
+	 <a href="/" class=" active cc-active"><img src="/images/logo.jpg"></a>
+	
+	
+
+		
+		<a href="/about/">About</a>
+	
+	
+
+		
+		<a href="/articles/">Articles</a>
+	
+	
+
+		
+		<a href="/contact/">Contact</a>
+	 
+<!-- Old Nav code	 
 	{% for link in site.data.navigation %}
 	{% assign class = "" %}
 
@@ -14,4 +32,6 @@
 		{% endif %}
 		<a href="{% include relative-src.html src=link.link %}" class="{{ class }}">{{ link.name }}</a>
 	{% endfor %}
+	
+-->
 </nav>
