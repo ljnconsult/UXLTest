@@ -45,6 +45,9 @@ layout: default
 		<h2>More Articles</h2>
 		<div class="button"><a href="/articles">Check out more articles</a></div>
 	</div>
+	
+		{% include sidebar.html %}
+		
 	{% if site.disqus_shortname and page.comments %}
 		<div id="disqus_thread"></div>
 		<script>
