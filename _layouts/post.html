@@ -39,6 +39,8 @@ layout: default
 		<a class="pinterest" href="//pinterest.com/pin/create/link/?url={{ share_url }}&amp;description={{ page.description }}">{% include social-icon.html icon="Pinterest" %}</a>
 -->
 		<a class="email" href="mailto:?subject=I've%20found%20a%20great%20article&amp;body=Check%20it%20out%20-%20{{ share_url }}">{% include social-icon.html icon="Email" %}</a>
+		
+		{% include sidebar.html %}
 	</div>
 
 	<div class="cta">
@@ -46,7 +48,7 @@ layout: default
 		<div class="button"><a href="/articles">Check out more articles</a></div>
 	</div>
 	
-		{% include sidebar.html %}
+		
 		
 	{% if site.disqus_shortname and page.comments %}
 		<div id="disqus_thread"></div>
